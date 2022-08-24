@@ -1,4 +1,19 @@
 class AlarmClock:
+    '''Representation of an alarm clock
+
+    Instance Variables:
+        current_time -- string in 24-hour time representing the current time displayed on the clock
+        alarm_enabled -- bool representing if the alarm will sound or not at the alarm_time
+        alarm_time -- string in 24- hour time representing the time the alarm is set for
+
+    Public Methods:
+        set_current_time:
+            Sets a new value for current_time and displays the time to the console
+        set_is_alarm_enabled:
+            Sets a new value for the alarm being turned on or not
+        set_alarm_time:
+            Sets a new value for the alarm_time and displays the time to the console
+    '''
     def __init__(self):
         self.current_time = '00:00'
         self.alarm_enabled = True
