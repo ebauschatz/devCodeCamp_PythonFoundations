@@ -17,7 +17,8 @@ class App:
         shopping_cart_tasks:
             Runs a set of tasks related to creating customers, products, and their interactions via a shopping cart
     """
-    def alarm_clock_tasks(self):
+    @staticmethod
+    def alarm_clock_tasks():
         """Runs a set of tasks related to creating, inspecting, and configuring an alarm clock
 
         Effects:
@@ -29,7 +30,8 @@ class App:
         alarm_clock.set_current_time()
         alarm_clock.set_is_alarm_enabled()
 
-    def shopping_cart_tasks(self):
+    @staticmethod
+    def shopping_cart_tasks():
         """Runs a set of tasks related to creating customers, products, and their interactions via a shopping cart
 
         Effects:
