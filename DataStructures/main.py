@@ -1,13 +1,16 @@
-import implementation
+from linked_list import LinkedList
 
+class RunMain:
+    def __init__(self):
+        pass
 
-def main():
-    print('Task 1')
-    implementation.find_month_from_float(3.14159)
-    implementation.favorite_fruits_and_veggies_configuration(['cranberry', 'orange', 'tomato', 'pepper'])
-    implementation.display_user_information()
-    print('\n\nTask 2')
-    implementation.display_family_relations()
+    def run_linked_list_tasks(self):
+        linked_list = LinkedList()
+        linked_list.append_node(13)
+        linked_list.append_node(42)
+        linked_list.append_node(111)
+        print(linked_list.find_node(111))
 
 if __name__ == '__main__':
-    main()
+    main = RunMain()
+    main.run_linked_list_tasks()
