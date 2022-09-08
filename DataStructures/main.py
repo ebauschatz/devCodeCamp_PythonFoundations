@@ -13,15 +13,23 @@ class RunMain:
         print(linked_list.find_node(111))
 
     def run_binary_search_tree_tasks(self):
-        root = BinaryNode(11)
-        root.insert_node(root, 13)
+        root = BinaryNode(27)
+        root.insert_node(root, 14)
+        root.insert_node(root, 35)
+        root.insert_node(root, 10)
+        root.insert_node(root, 19)
+        root.insert_node(root, 31)
         root.insert_node(root, 42)
-        root.insert_node(root, 3)
-        root.insert_node(root, 30)
-        root.insert_node(root, 5)
-        root.insert_node(root, 4)
-        root.search_for_node(root, 5)
-        root.search_for_node(root, 31)
+
+        print('\nInorder Display:')
+        root.inorder_tree_display(root)
+        print('\nPreorder Display:')
+        root.preorder_tree_display(root)
+        print('\nPostorder Display:')
+        root.postorder_tree_display(root)
+        # root.search_for_node(root, 5)
+        # root.search_for_node(root, 30)
+        print()
 
 if __name__ == '__main__':
     main = RunMain()

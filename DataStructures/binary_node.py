@@ -27,3 +27,30 @@ class BinaryNode:
             self.search_for_node(current_node.right, value)
         else:
             self.search_for_node(current_node.left, value)
+
+    def inorder_tree_display(self, current_node):
+        if current_node.left is not None:
+            self.inorder_tree_display(current_node.left)
+        
+        print(f'Next value: {current_node.data}')
+
+        if current_node.right is not None:
+            self.inorder_tree_display(current_node.right)
+
+    def preorder_tree_display(self, current_node):
+        print(f'Next value: {current_node.data}')
+
+        if current_node.left is not None:
+            self.preorder_tree_display(current_node.left)
+
+        if current_node.right is not None:
+            self.preorder_tree_display(current_node.right)
+
+    def postorder_tree_display(self, current_node):
+        if current_node.left is not None:
+            self.postorder_tree_display(current_node.left)
+
+        if current_node.right is not None:
+            self.postorder_tree_display(current_node.right)
+
+        print(f'Next value: {current_node.data}')
