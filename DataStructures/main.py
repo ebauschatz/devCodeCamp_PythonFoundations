@@ -8,9 +8,17 @@ class RunMain:
     def run_linked_list_tasks(self):
         linked_list = LinkedList()
         linked_list.append_node(13)
+        linked_list.append_node(35)
+        linked_list.append_node(78)
         linked_list.append_node(42)
-        linked_list.append_node(111)
-        print(linked_list.find_node(111))
+        linked_list.append_node(11)
+
+        #linked_list.add_before(11, 363)
+        #linked_list.add_after(42, 114)
+        #linked_list.add_first(111)
+        #print(linked_list.remove(78))
+        #print(linked_list.remove(21))
+        linked_list.clear()
 
     def run_binary_search_tree_tasks(self):
         root = BinaryNode(27)
@@ -27,11 +35,13 @@ class RunMain:
         root.preorder_tree_display(root)
         print('\nPostorder Display:')
         root.postorder_tree_display(root)
-        # root.search_for_node(root, 5)
-        # root.search_for_node(root, 30)
+
+        print('\nSearch for Values:')
+        root.search_for_node(root, 5)
+        root.search_for_node(root, 30)
         print()
 
 if __name__ == '__main__':
     main = RunMain()
-    #main.run_linked_list_tasks()
-    main.run_binary_search_tree_tasks()
+    main.run_linked_list_tasks()
+    #main.run_binary_search_tree_tasks()
